@@ -1,0 +1,277 @@
+html{
+	height:100%;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+
+#news{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;	
+}
+#banner{
+	width: 100%;
+	background-color: #FF6600;
+}
+
+#banner img{
+	border: 2px;
+	border-color: #ffffff;
+	margin-left: 2px;
+}
+
+#YC{
+
+}
+#refresh{
+	float: right;
+	margin: 3px;
+}
+
+#exit-web-view{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 15px;
+	z-index: 2;
+	margin-left:50%;
+	padding-left: 5px; 
+	padding-right: 5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;  
+	color: #F60;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+#page-scrape{
+    position: fixed;
+    top: 3px;
+    left: 40px;
+    z-index: 2;
+    margin-left: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #F60;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+#scrape{
+	display: block;
+    position: fixed;
+    left: 51%;
+    top: 0;
+    z-index: 0;
+    overflow: scroll;
+    width: 47%;
+    height: 93%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11pt;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+#scrape div
+#scrape p{
+	padding: 20px;
+}
+
+#stories {
+
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;		
+	margin-left: 5%;
+
+	background: #F6F6EF;
+	padding-top: 15px;
+	padding-left:5px;
+	font-family: Verdana,Geneva,sans-serif;
+
+}
+
+#resizeBar {
+	width: 6px;
+	height: 100%;
+	margin-left: 50%;     
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	cursor: ew-resize;
+	background-color: rgba(255, 222, 194, 1);
+}
+
+.unselectable {
+   -ms-user-select: none; /* IE 10+ */
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+.stories-web-view{
+	background: #F6F6EF;
+	padding-top: 15px;
+	padding-left:5px;
+	font-family: Verdana,Geneva,sans-serif;
+
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;		
+	margin-left: 5%;
+}
+
+iframe{
+	//display: none;
+	width:50%;
+	height:100%;
+	margin-left: 50%;     
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+
+/*border-left:solid;
+border-color: rgba(255, 222, 194, 1);*/
+}
+
+#frameOverlay {
+	width: 50%;
+	height: 100%;
+	margin-left: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: blue;
+}
+
+.comment-link{
+	font-size: 9pt;
+}
+
+.story{
+	width: 100%;
+	margin-bottom: 30px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	background-color: rgba(243, 243, 243, 1);
+
+}
+
+.story .title a{
+	color: black;
+}
+
+.story .author{
+	margin-bottom: 10px;
+	margin-top: 4px; 
+	color:#3C7CB0;
+}
+
+.score{
+	display: inline-block;
+	vertical-align: top;
+	min-width: 30px;
+	margin-left: 0px;
+	margin-right: 15px;
+	font-size: 10pt;
+}
+
+.title{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.comment-link{
+	display: block;
+	margin-top: 10px;
+	margin-left: 45px;
+	margin-bottom: 10px;
+}
+
+.comment{
+	padding:15px;
+	margin-bottom: 6px;
+	word-wrap:break-word;
+}
+
+.comment .comment-link{
+	display: block;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+.comment-level-0{
+	width: 90%;
+	margin-left: 10%;
+	background-color: #EFF0E9;
+}
+
+.comment-level-1{
+	width: 80%;
+	margin-left: 20%;	
+	background-color: #EFF0F3;
+}
+
+.comment-level-2{
+	width: 70%;
+	margin-left: 30%;	
+	background-color: #EFF0E9;
+}
+
+.comment-level-3{
+	width: 60%;
+	margin-left: 40%;	
+	background-color: #EFF0E9;
+}
+
+.comment-level-4{
+	width: 50%;
+	margin-left: 50%;	
+	background-color: #EFF0E9;
+}
+
+.comment-level-5{
+	width: 40%;
+	margin-left: 60%;	
+	background-color: #EFF0E9;
+}
+
+.comment-level-6{
+	width: 30%;
+	margin-left: 70%;	
+	background-color: #EFF0E9;
+}
+
+.comment-level-7{
+	width: 20%;
+	margin-left: 80%;	
+	background-color: #EFF0E9;
+}

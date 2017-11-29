@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="Al's custom hacker news view">
+	<title>Hacker News</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="news">
+			<div id="banner">
+				<a href="https://news.ycombinator.com/" id="YC"><img src="y18.gif" alt="Hacker News"/></a>
+				<a href="#" id="refresh"><img src="refresh.gif" alt="refresh"></a>
+			</div>
+			<div id="stories"></div>
+		</div>
+		<div id="resizeBar"></div>
+		<a href="#" id="exit-web-view" onclick="closePageView(); return false;">x</a>
+		
+		<div id="right">
+			<div id="frameOverlay"></div>
+			<iframe id="view" src="" frameBorder="0" ></iframe>
+		</div>
+
+	</div>
+</body>
+</html>
